@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ayushkzz/lab13.git'
+                checkout scm
             }
         }
         stage('Build & Test') {
